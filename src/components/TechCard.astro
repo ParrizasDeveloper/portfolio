@@ -1,0 +1,14 @@
+---
+const { techName } = Astro.props;
+---
+
+<article class="tech-card flex flex-col items-center justify-end h-28 w-28">
+    <slot />
+    <span>{techName}</span>
+</article>
+
+<style is:global>
+    .tech-card svg {
+        max-height: 80%;
+    }
+</style>

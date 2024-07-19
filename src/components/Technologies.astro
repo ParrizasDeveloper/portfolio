@@ -1,0 +1,63 @@
+---
+import AstroIcon from "../icons/AstroIcon.astro";
+import Bootstrap from "../icons/Bootstrap.astro";
+import Code from "../icons/Code.astro";
+import CSS from "../icons/CSS.astro";
+import HTML from "../icons/HTML.astro";
+import JS from "../icons/JS.astro";
+import React from "../icons/React.astro";
+import Tailwindcss from "../icons/Tailwindcss.astro";
+---
+
+<section
+    class="flex justify-center px-8 h-screen bg-gradient-to-b from-neutral-950 to-neutral-900"
+>
+    <div
+        class="flex flex-col justify-center items-start w-full lg:max-w-4xl md:max-w-3xl"
+    >
+        <h2 class="flex gap-2 mb-10 font-bold text-4xl text-gray-50">
+            <Code className="w-10 text-purple-400 inline-block" />
+            Tecnologías
+        </h2>
+        <section class="rounded-lg mb-8">
+            <header
+                class="font-medium text-2xl text-purple-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
+            >
+                Frontend
+            </header>
+            <div
+                class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg"
+            >
+                <HTML />
+                <CSS />
+                <JS />
+                <React />
+                <AstroIcon />
+                <Bootstrap />
+                <Tailwindcss />
+            </div>
+        </section>
+        <section class="rounded-lg mb-8">
+            <header
+                class="font-medium text-2xl text-purple-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
+            >
+                Backend
+            </header>
+            <div
+                class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg"
+            >
+            </div>
+        </section>
+        <section class="rounded-lg mb-8">
+            <header
+                class="font-medium text-2xl text-purple-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
+            >
+                Otras
+            </header>
+            <div
+                class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg"
+            >
+            </div>
+        </section>
+    </div>
+</section>
