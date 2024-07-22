@@ -1,7 +1,7 @@
 ---
 import AstroIcon from "../icons/Frontend/AstroIcon.astro";
 import Bootstrap from "../icons/Frontend/Bootstrap.astro";
-import Code from "../icons/Code.astro";
+import TechIcon from "../icons/TechIcon.astro";
 import CSS from "../icons/Frontend/CSS.astro";
 import HTML from "../icons/Frontend/HTML.astro";
 import JS from "../icons/Frontend/JS.astro";
@@ -17,72 +17,82 @@ import Python from "../icons/Backend/Python.astro";
 import Git from "../icons/Others/Git.astro";
 import GitHub from "../icons/Others/GitHub.astro";
 import Docker from "../icons/Others/Docker.astro";
+import NPM from "../icons/Others/NPM.astro";
 ---
 
-<section class="flex justify-center px-8 py-20">
-    <div
-        class="flex flex-col justify-center items-center w-full lg:max-w-4xl md:max-w-3xl"
+<div
+    class="flex flex-col justify-center items-center w-full lg:max-w-4xl md:max-w-3xl"
+>
+    <h2
+        class="flex items-center gap-2 mb-10 font-bold text-4xl text-gray-50 w-full lg:w-auto"
     >
-        <h2 class="flex gap-2 mb-14 font-bold text-4xl text-gray-50 w-full lg:w-auto lg:mb-20">
-            <Code className="w-10 text-purple-400 inline-block" />
-            Tecnologías
-        </h2>
-        <div class="lg:flex lg:gap-5">
-            <section class="rounded-lg mb-8">
-                <header
-                    class="font-medium text-2xl text-purple-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
-                >
-                    Frontend
-                </header>
-                <div
-                    class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg"
-                >
-                    <HTML />
-                    <CSS />
-                    <JS />
-                    <React />
-                    <AstroIcon />
-                    <Bootstrap />
-                    <Tailwindcss />
-                </div>
-            </section>
-            <section class="rounded-lg mb-8">
-                <header
-                    class="font-medium text-2xl text-purple-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800
-                    lg:float-right"
-                >
-                    Backend
-                </header>
-                <div
-                    class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg
-                    lg:clear-right lg:rounded-t-lg lg:rounded-tr-none"
-                >
-                    <Node />
-                    <Java />
-                    <PHP />
-                    <Symfony />
-                    <MySQL />
-                    <PostgreSQL />
-                    <Python />
-                </div>
-            </section>
-        </div>
-        <section
-            class="rounded-lg mb-8 flex flex-col items-start lg:items-center w-full"
-        >
+        <TechIcon className="w-10 text-purple-400 inline-block" />
+        Tecnologías
+    </h2>
+    <p class="mb-16 lg:text-center text-gray-300 text-lg">
+        En mi recorrido por el 
+        <span class="text-purple-300">mundo del desarrollo web,</span>
+        he desarrollado una
+        <span class="text-orange-300">sólida base de conocimientos</span> en
+        múltiples tecnologías. A continuación, presento mi
+        <span class="text-purple-300">stack de desarrollo:</span>
+    </p>
+    <div class="lg:flex lg:gap-5">
+        <section class="rounded-lg mb-8">
             <header
-                class="font-medium text-2xl text-purple-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
+                class="font-medium text-2xl text-orange-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
             >
-                Otras
+                Frontend
+            </header>
+            <div
+                class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg"
+            >
+                <HTML />
+                <CSS />
+                <JS />
+                <React />
+                <AstroIcon />
+                <Bootstrap />
+                <Tailwindcss />
+            </div>
+        </section>
+        <section class="rounded-lg mb-8">
+            <header
+                class="font-medium text-2xl text-orange-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800
+                lg:float-right"
+            >
+                Backend
             </header>
             <div
                 class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg
-                lg:rounded-t-lg w-full lg:w-auto"
+                lg:clear-right lg:rounded-t-lg lg:rounded-tr-none"
             >
-                <Git />
-                <GitHub />
-                <Docker />
+                <Node />
+                <Java />
+                <PHP />
+                <Symfony />
+                <MySQL />
+                <PostgreSQL />
+                <Python />
             </div>
         </section>
     </div>
-</section>
+    <section
+        class="rounded-lg flex flex-col items-start lg:items-center w-full"
+    >
+        <header
+            class="font-medium text-2xl text-purple-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
+        >
+            Otras
+        </header>
+        <div
+            class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg
+            lg:rounded-t-lg w-full lg:w-auto"
+        >
+            <Git />
+            <GitHub />
+            <Docker />
+            <NPM />
+        </div>
+    </section>
+</div>
