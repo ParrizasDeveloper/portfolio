@@ -18,6 +18,7 @@ import Git from "../icons/Others/Git.astro";
 import GitHub from "../icons/Others/GitHub.astro";
 import Docker from "../icons/Others/Docker.astro";
 import NPM from "../icons/Others/NPM.astro";
+import TechCard from "./TechCard.astro";
 ---
 
 <div
@@ -30,11 +31,11 @@ import NPM from "../icons/Others/NPM.astro";
         Tecnologías
     </h2>
     <p class="mb-16 lg:text-center text-gray-300 text-lg">
-        En mi recorrido por el 
+        En mi recorrido por el
         <span class="text-purple-300">mundo del desarrollo web,</span>
         he desarrollado una
-        <span class="text-orange-300">sólida base de conocimientos</span> en
-        múltiples tecnologías. A continuación, presento mi
+        <span class="text-orange-300">sólida base de conocimientos</span> en múltiples
+        tecnologías. A continuación, presento mi
         <span class="text-purple-300">stack de desarrollo:</span>
     </p>
     <div class="lg:flex lg:gap-5">
@@ -47,13 +48,13 @@ import NPM from "../icons/Others/NPM.astro";
             <div
                 class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg"
             >
-                <HTML />
-                <CSS />
-                <JS />
-                <React />
-                <AstroIcon />
-                <Bootstrap />
-                <Tailwindcss />
+                <TechCard techName="HTML" />
+                <TechCard techName="CSS" />
+                <TechCard techName="JS" />
+                <TechCard techName="React" />
+                <TechCard techName="Astro" />
+                <TechCard techName="Bootstrap" />
+                <TechCard techName="Tailwind" />
             </div>
         </section>
         <section class="rounded-lg mb-8">
@@ -67,13 +68,13 @@ import NPM from "../icons/Others/NPM.astro";
                 class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg
                 lg:clear-right lg:rounded-t-lg lg:rounded-tr-none"
             >
-                <Node />
-                <Java />
-                <PHP />
-                <Symfony />
-                <MySQL />
-                <PostgreSQL />
-                <Python />
+                <TechCard techName="Node" />
+                <TechCard techName="PHP" />
+                <TechCard techName="Java" />
+                <TechCard techName="Python" />
+                <TechCard techName="MySQL" />
+                <TechCard techName="Postgre" />
+                <TechCard techName="Symfony" />
             </div>
         </section>
     </div>
@@ -89,10 +90,10 @@ import NPM from "../icons/Others/NPM.astro";
             class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg
             lg:rounded-t-lg w-full lg:w-auto"
         >
-            <Git />
-            <GitHub />
-            <Docker />
-            <NPM />
+            <TechCard techName="Git" />
+            <TechCard techName="GitHub" />
+            <TechCard techName="Docker" />
+            <TechCard techName="NPM" />
         </div>
     </section>
 </div>
