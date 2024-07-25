@@ -20,9 +20,22 @@ const { title } = Astro.props;
 			bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
 		>
 		</div>
-		<div class="gradiant-page min-h-screen bg-gradient-to-b from-neutral-950 to-neutral-900 absolute w-full -z-10">
+		<div
+			class="gradiant-page bg-gradient-to-b from-neutral-950 to-neutral-900 absolute w-full -z-10"
+		>
 		</div>
 		<slot />
+		<footer class="overflow-auto px-8">
+			<div
+				class="flex justify-between w-full max-w-4xl mx-auto my-10 text-gray-50 p-5 rounded-lg bg-neutral-800"
+			>
+				<span>©️ 2024 Párrizas</span>
+				<div class="flex gap-6">
+					<a href="#">Sobre mí</a>
+					<a href="#">Contacto</a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
 <style is:global>
