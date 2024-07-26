@@ -3,14 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import Intro from "../components/Intro.astro";
 import Technologies from "../components/Technologies/Technologies.astro";
 import Projects from "../components/Projects/Projects.astro";
+import AboutMe from "../components/AboutMe.astro";
 ---
 
 <Layout title="Párrizas | Full-Stack Developer">
 	<main class="text-gray-50">
 		<Intro />
-		<section class="flex flex-col items-center px-8 py-20 gap-32">
+		<div class="flex flex-col items-center px-8 py-20 gap-32">
 			<Technologies />
 			<Projects />
-		</section>
+			<AboutMe />
+		</div>
 	</main>
 </Layout>
