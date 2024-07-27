@@ -1,6 +1,12 @@
-<section class="flex justify-center px-8 h-screen">
+---
+import GitHubIntro from "../icons/GitHubIntro.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import Plane from "../icons/Plane.astro";
+---
+
+<section class="flex justify-center px-8 h-screen relative">
     <div
-        class="flex flex-col justify-center items-center w-full lg:max-w-4xl md:max-w-3xl text-center"
+        class="flex flex-col justify-center items-center w-full lg:max-w-4xl md:max-w-3xl text-center relative"
     >
         <h1 class="dark:text-gray-100 font-extrabold text-4xl sm:text-7xl mb-2">
             Miguel Angel Párrizas
@@ -21,5 +27,65 @@
                 intuitivas y visualmente atractivas.
             </span>
         </p>
+        <div class="links flex p-8 gap-4">
+            <a
+                href="mailto:maparrizasd@gmail.com"
+                target="_blank"
+                class="flex items-center gap-2 px-3 py-1 rounded-full border border-gray-500 hover:scale-105 transition-all"
+            >
+                <Plane className="w-5 h-full" />
+                <span class="font-semibold">Contáctame</span>
+            </a>
+            <a
+                href="https://www.linkedin.com/in/miguel-%C3%A1ngel-p%C3%A1rrizas-d%C3%ADaz-7951a8243/"
+                target="_blank"
+                class="flex items-center gap-2 px-3 py-1 rounded-full border border-gray-500 hover:scale-105 transition-all"
+            >
+                <LinkedIn className="w-5 h-full" />
+                <span class="font-semibold">LinkedIn</span>
+            </a>
+            <a
+                href="https://github.com/ParrizasDeveloper"
+                target="_blank"
+                class="flex items-center gap-2 px-3 py-1 rounded-full border border-gray-500 hover:scale-105 transition-all"
+            >
+                <GitHubIntro className="w-5 h-full" />
+                <span class="font-semibold">GitHub</span>
+            </a>
+        </div>
+        <div class="infinite-animation flex flex-col items-center absolute bottom-6">
+            <span class="font-light">Proyectos</span>
+            <svg
+                class="w-8 relative -top-1"
+                viewBox="0 0 64 64"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="#ffffff"
+                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
+                    ><polyline points="48 24 32 40 16 24"></polyline></g
+                ></svg
+            >
+        </div>
     </div>
 </section>
+<style>
+    div.links a {
+        background-color: rgb(34 34 51);
+    }
+
+    @keyframes bounce {
+        0% {
+            bottom: 24px;
+        }
+        100% {
+            bottom: 34px;
+        }
+    }
+
+    .infinite-animation {
+        animation: bounce 0.5s  infinite alternate;
+    }
+</style>

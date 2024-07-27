@@ -9,7 +9,40 @@ import AboutMeIcon from "../icons/AboutMeIcon.astro";
         <AboutMeIcon className="h-9" />
         Sobre Mí
     </h2>
-    <p>
-        Soy Miguel Ángel Párrizas, pero mis amigos me llaman Migue.
-    </p>
+    <div>
+        <p class="aboutA text-center bg-purple-950">
+            ¡Hola! Soy Miguel Ángel Párrizas, aunque mis amigos me llaman Migue
+            o Parri. Tengo 22 años y he completado mis estudios como
+            desarrollador Web. A lo largo de mis estudios, me he esforzado por
+            sobresalir, lo que refleja mi dedicación y pasión por la
+            programación.
+        </p><br />
+        <p class="aboutB text-center bg-orange-900">
+            Me fascina el frontend y el backend, pero si tuviera que elegir, me
+            inclinaría por el frontend, donde puedo expresar mi creatividad. Me
+            esfuerzo por crear páginas web que no solo sean compactas y de alto
+            rendimiento, sino también visualmente atractivas.
+        </p><br />
+        <p class="aboutC text-center bg-purple-950">
+            Fuera del mundo del desarrollo, soy un apasionado de los videojuegos
+            y del Tricking, un deporte acrobático que me permite expresar mi
+            energía y creatividad de otra manera. Mi objetivo es seguir
+            creciendo como desarrollador y crear experiencias web que dejen una
+            impresión duradera.
+        </p>
+    </div>
 </section>
+<style>
+    p {
+        padding: 10px 7%;
+    }
+
+    p.aboutA,
+    p.aboutC {
+        clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    }
+
+    p.aboutB {
+        clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+    }
+</style>
