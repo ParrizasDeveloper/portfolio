@@ -27,7 +27,7 @@ import Plane from "../icons/Plane.astro";
                 intuitivas y visualmente atractivas.
             </span>
         </p>
-        <div class="links flex p-8 gap-4">
+        <div class="links flex flex-wrap justify-center py-8 gap-4">
             <a
                 href="mailto:maparrizasd@gmail.com"
                 target="_blank"
@@ -53,7 +53,9 @@ import Plane from "../icons/Plane.astro";
                 <span class="font-semibold">GitHub</span>
             </a>
         </div>
-        <div class="infinite-animation flex flex-col items-center absolute bottom-6">
+        <div
+            class="infinite-animation flex flex-col items-center absolute bottom-6"
+        >
             <span class="font-light">Proyectos</span>
             <svg
                 class="w-8 relative -top-1"
@@ -86,6 +88,6 @@ import Plane from "../icons/Plane.astro";
     }
 
     .infinite-animation {
-        animation: bounce 0.5s  infinite alternate;
+        animation: bounce 0.5s infinite alternate;
     }
 </style>
