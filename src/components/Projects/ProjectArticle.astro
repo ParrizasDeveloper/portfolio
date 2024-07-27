@@ -18,7 +18,7 @@ const { title, description, link, code, tags, image } = Astro.props;
             {
                 tags.map((tag) => (
                     <div
-                        class={`flex gap-2 items-center h-7 rounded-2xl px-3 py-1 ${tag.class}`}
+                        class={`iconTag flex gap-2 items-center h-7 rounded-2xl px-3 py-1 ${tag.class}`}
                     >
                         <div class="flex items-center w-4 h-full">
                             {<tag.icon />}
@@ -48,3 +48,8 @@ const { title, description, link, code, tags, image } = Astro.props;
         </div>
     </div>
 </article>
+<style is:global>
+    .iconTag svg {
+        width: 100%;
+    }
+</style>
