@@ -1,0 +1,40 @@
+---
+import House from "../icons/House.astro";
+---
+
+<header
+    id="mainHeader"
+    class="fixed flex w-full font-semibold text-gray-100 p-5 z-10"
+>
+    <nav
+        id="navHeader"
+        class="flex gap-5 m-auto justify-center px-5 py-2 rounded-full backdrop-blur"
+    >
+        <a href="#home" class="flex items-center"><House className="w-5" /></a>
+        <a href="#projects">Proyectos</a>
+        <a href="#tech">Tecnologías</a>
+        <a href="#aboutme">Sobre mí</a>
+    </nav>
+</header>
+<script>
+    const nav = document.getElementById("navHeader");
+    const header = document.getElementById("mainHeader");
+
+    if (window.scrollY <= 100) {
+        nav.style.backgroundColor = `rgba(107, 114, 128, ${0.4 * (window.scrollY / 100)})`;
+        header.style.top = `${50 - (50 * window.scrollY) / 100}px`;
+    } else {
+        nav.style.backgroundColor = "rgba(107, 114, 128, 0.4";
+        header.style.top = "0";
+    }
+
+    document.addEventListener("scroll", function () {
+        if (window.scrollY <= 100) {
+            nav.style.backgroundColor = `rgba(107, 114, 128, ${0.4 * (window.scrollY / 100)})`;
+            header.style.top = `${50 - (50 * window.scrollY) / 100}px`;
+        } else {
+            nav.style.backgroundColor = "rgba(107, 114, 128, 0.4";
+            header.style.top = "0";
+        }
+    });
+</script>
