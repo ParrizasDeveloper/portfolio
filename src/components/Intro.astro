@@ -2,6 +2,7 @@
 import GitHubIntro from "../icons/GitHubIntro.astro";
 import LinkedIn from "../icons/LinkedIn.astro";
 import Plane from "../icons/Plane.astro";
+import BounceProjects from "./BounceProjects.astro";
 ---
 
 <section id="home" class="flex justify-center px-8 h-screen relative">
@@ -53,41 +54,11 @@ import Plane from "../icons/Plane.astro";
                 <span class="font-semibold">GitHub</span>
             </a>
         </div>
-        <div
-            class="infinite-animation flex flex-col items-center absolute bottom-6"
-        >
-            <span class="font-light">Proyectos</span>
-            <svg
-                class="w-8 relative -top-1"
-                viewBox="0 0 64 64"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="#ffffff"
-                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
-                    ><polyline points="48 24 32 40 16 24"></polyline></g
-                ></svg
-            >
-        </div>
+        <BounceProjects />
     </div>
 </section>
 <style>
     div.links a {
         background-color: rgb(34 34 51);
-    }
-
-    @keyframes bounce {
-        0% {
-            bottom: 24px;
-        }
-        100% {
-            bottom: 34px;
-        }
-    }
-
-    .infinite-animation {
-        animation: bounce 0.5s infinite alternate;
     }
 </style>

@@ -1,0 +1,33 @@
+<div
+    id="bounceProjects"
+    class="infinite-animation flex flex-col items-center absolute bottom-6"
+>
+    <span class="font-light">Proyectos</span>
+    <svg
+        class="w-8 relative -top-1"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="#ffffff"
+        ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
+            ><polyline points="48 24 32 40 16 24"></polyline></g
+        ></svg
+    >
+</div>
+<style>
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    #bounceProjects {
+        animation: bounce 0.5s infinite alternate;
+    }
+</style>
