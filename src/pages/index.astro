@@ -22,19 +22,19 @@ import AboutMe from "../components/AboutMe.astro";
 	const bounceProjects = document.getElementById("bounceProjects");
 
 	if (window.scrollY <= 100) {
-		nav.style.backgroundColor = `rgba(107, 114, 128, ${0.4 * (window.scrollY / 100)})`;
+		nav.style.backgroundColor = `rgba(107, 114, 128, ${0.5 * (window.scrollY / 100)})`;
 		header.style.top = `${50 - (50 * window.scrollY) / 100}px`;
 	} else {
-		nav.style.backgroundColor = "rgba(107, 114, 128, 0.4";
+		nav.style.backgroundColor = "rgba(107, 114, 128, 0.5";
 		header.style.top = "0";
 	}
 
 	document.addEventListener("scroll", function () {
 		if (window.scrollY <= 100) {
-			nav.style.backgroundColor = `rgba(107, 114, 128, ${0.4 * (window.scrollY / 100)})`;
+			nav.style.backgroundColor = `rgba(107, 114, 128, ${0.5 * (window.scrollY / 100)})`;
 			header.style.top = `${50 - (50 * window.scrollY) / 100}px`;
 		} else {
-			nav.style.backgroundColor = "rgba(107, 114, 128, 0.4";
+			nav.style.backgroundColor = "rgba(107, 114, 128, 0.5)";
 			header.style.top = "0";
 		}
 
