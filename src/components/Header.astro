@@ -40,10 +40,12 @@ import Sun from "../icons/Sun.astro";
 
     if (!themeDark) {
         document.getElementById("moonIcon").classList.add("hidden");
+        localStorage.setItem("theme", "light");
         homeButton.setAttribute("fill", "#374151");
     } else {
         document.getElementById("sunIcon").classList.add("hidden");
         document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
         homeButton.setAttribute("fill", "#F3F4F6");
     }
 
