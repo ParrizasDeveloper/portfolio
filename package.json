@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/tailwind": "^5.1.5",
     "@fontsource-variable/quicksand": "^5.0.18",
-    "astro": "^4.11.5",
+    "astro": "^5.1.9",
     "tailwindcss": "^3.4.6"
   }
 }

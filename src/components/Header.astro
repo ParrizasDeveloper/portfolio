@@ -1,12 +1,10 @@
 ---
 import House from "../icons/House.astro";
-import Moon from "../icons/Moon.astro";
-import Sun from "../icons/Sun.astro";
 ---
 
 <header
     id="mainHeader"
-    class="fixed flex w-full font-semibold text-gray-700 dark:text-gray-100 p-5 z-50"
+    class="fixed flex w-full font-semibold text-gray-100 p-5 z-50"
 >
     <nav
         id="navHeader"
@@ -16,50 +14,5 @@ import Sun from "../icons/Sun.astro";
         <a href="#projects">Proyectos</a>
         <a href="#tech">Tecnologías</a>
         <a href="#aboutme" class="hidden sm:block">Sobre mí</a>
-        <div
-            id="theme"
-            class="flex items-center justify-center cursor-pointer w-6 hover:scale-125 transition-all"
-        >
-            <div id="moonIcon" class="w-4">
-                <Moon className="w-full" />
-            </div>
-            <div id="sunIcon" class="w-6">
-                <Sun className="w-full" />
-            </div>
-        </div>
     </nav>
 </header>
-<script>
-    const homeButton = document.querySelector("#homeIcon>path");
-    const themeButton = document.getElementById("theme");
-    const storedTheme = localStorage.getItem("theme");
-    const themeDark =
-        storedTheme !== null
-            ? storedTheme === "dark"
-            : window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    if (!themeDark) {
-        document.getElementById("moonIcon").classList.add("hidden");
-        localStorage.setItem("theme", "light");
-        homeButton.setAttribute("fill", "#374151");
-    } else {
-        document.getElementById("sunIcon").classList.add("hidden");
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-        homeButton.setAttribute("fill", "#F3F4F6");
-    }
-
-    themeButton.addEventListener("click", () => {
-        document.getElementById("moonIcon").classList.toggle("hidden");
-        document.getElementById("sunIcon").classList.toggle("hidden");
-        document.documentElement.classList.toggle("dark");
-
-        if (localStorage.getItem("theme") === "dark") {
-            localStorage.setItem("theme", "light");
-            homeButton.setAttribute("fill", "#374151");
-        } else {
-            localStorage.setItem("theme", "dark");
-            homeButton.setAttribute("fill", "#F3F4F6");
-        }
-    });
-</script>
