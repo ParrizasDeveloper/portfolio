@@ -5,9 +5,26 @@ import { TAGS } from "../../data/Tags.astro";
 
 const PROJECTS = [
     {
+        title: "Nitro Crown",
+        description:
+            "Concesionario de vehículos deportivos de alta gama, creado con Next.js y animado con GSAP. Actualmente en desarrollo...",
+        link: "#",
+        code: "https://github.com/ParrizasDeveloper/nitro-crown",
+        tags: [
+            TAGS.Nextjs,
+            TAGS.React,
+            TAGS.TypeScript,
+            TAGS.Tailwind,
+            TAGS.HTML,
+            TAGS.Prisma,
+            TAGS.Neon,
+        ],
+        image: "/projects/nitro-crown.webp",
+    },
+    {
         title: "Summoner Stats",
         description:
-            "Creado con React y Node mediante Vite - Es una plataforma para analizar jugadores de League of Legends. Actualmente en desarrollo...",
+            "Creado con React y Node mediante Vite - Es una plataforma para analizar jugadores de League of Legends.",
         link: "https://sumstats.up.railway.app/",
         code: "https://github.com/ParrizasDeveloper/summoner-stats",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.React, TAGS.Node],
@@ -25,7 +42,10 @@ const PROJECTS = [
 ];
 ---
 
-<div id="projects" class="flex flex-col items-center w-full lg:max-w-4xl md:max-w-3xl pt-20 pb-10">
+<div
+    id="projects"
+    class="flex flex-col items-center w-full lg:max-w-4xl md:max-w-3xl pt-20 pb-10"
+>
     <h2
         class="flex items-center gap-2 mb-10 font-bold text-4xl text-gray-50 w-full lg:w-auto"
     >
