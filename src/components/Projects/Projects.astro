@@ -7,8 +7,8 @@ const PROJECTS = [
     {
         title: "Nitro Crown",
         description:
-            "Concesionario de vehículos deportivos de alta gama, creado con Next.js y animado con GSAP. Actualmente en desarrollo...",
-        link: "#",
+            "Concesionario de vehículos deportivos de alta gama, creado con Next.js y animado con GSAP.",
+        link: "https://nitro-crown-three.vercel.app/",
         code: "https://github.com/ParrizasDeveloper/nitro-crown",
         tags: [
             TAGS.Nextjs,
@@ -20,6 +20,7 @@ const PROJECTS = [
             TAGS.Neon,
         ],
         image: "/projects/nitro-crown.webp",
+        currentlyWorking: true,
     },
     {
         title: "Summoner Stats",
@@ -29,6 +30,7 @@ const PROJECTS = [
         code: "https://github.com/ParrizasDeveloper/summoner-stats",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.React, TAGS.Node],
         image: "/projects/sumstats.webp",
+        currentlyWorking: false,
     },
     {
         title: "Portfolio",
@@ -38,6 +40,7 @@ const PROJECTS = [
         code: "https://github.com/ParrizasDeveloper/portfolio",
         tags: [TAGS.HTML, TAGS.Astro, TAGS.Tailwind],
         image: "/projects/portfolio.webp",
+        currentlyWorking: false,
     },
 ];
 ---
@@ -62,6 +65,7 @@ const PROJECTS = [
                     code={project.code}
                     tags={project.tags}
                     image={project.image}
+                    currentlyWorking={project.currentlyWorking}
                 />
             ))
         }
