@@ -1,17 +1,11 @@
 ---
 import { TAGS } from "../../data/Tags.astro";
-const { techName } = Astro.props;
+const { techName, className } = Astro.props;
 
 const tag = TAGS[techName];
 ---
 
-<article class="tech-card flex flex-col items-center justify-end h-28 w-28">
+<article class={`tech-card flex flex-col items-center justify-end h-28 w-28 ${className || ""}`}>
     {<tag.icon />}
     <span>{tag.name}</span>
 </article>
-
-<style is:global>
-    .tech-card svg {
-        max-height: 80%;
-    }
-</style>

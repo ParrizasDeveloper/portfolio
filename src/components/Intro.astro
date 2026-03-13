@@ -13,20 +13,24 @@ import BounceProjects from "./BounceProjects.astro";
             Miguel Angel Párrizas
         </h1>
         <h2 class="mb-10 font-bold text-2xl sm:text-4xl text-purple-300">
-            Desarrollador Web Full-Stack
+            Frontend Developer · React & Next.js
         </h2>
-        <p class="text-gray-300 text-xl sm:text-2xl">
-            Apasionado por el desarrollo web, con
-            <span class="text-orange-300">experiencia</span>
-            en la creación de
-            <span class="text-purple-300">aplicaciones web dinámicas.</span>
-            <br />
-            Me dedico a convertir
-            <span class="text-orange-300">ideas</span>
-            en aplicaciones
-            <span class="text-purple-300">
-                intuitivas y visualmente atractivas.
+        <p class="text-gray-300 text-xl sm:text-2xl max-w-3xl">
+            Desarrollo
+            interfaces web modernas
+            centradas en
+            rendimiento y experiencia
+            de usuario usando
+            
+                tecnologías modernas del ecosistema JavaScript.
             </span>
+        </p>
+        <p id="main-stack" class="text-gray-300 text-xl sm:text-2xl max-w-3xl mt-4">
+            <span>React</span>
+            · <span>Next.js</span>
+            · <span>TypeScript</span>
+            · <span>Tailwind CSS</span>
+            · <span>GSAP</span>
         </p>
         <div class="links flex flex-wrap justify-center py-8 gap-4">
             <a
@@ -60,5 +64,11 @@ import BounceProjects from "./BounceProjects.astro";
 <style>
     div.links a {
         background-color: rgb(34 34 51);
+    }
+    #main-stack span:nth-of-type(odd) {
+        color: #fdba74;
+    }
+    #main-stack span:nth-of-type(even) {
+        color: #c4b5fd;
     }
 </style>

@@ -21,7 +21,7 @@ import TechCard from "./TechCard.astro";
         tecnologías. A continuación, presento mi
         <span class="text-purple-300">stack de desarrollo:</span>
     </p>
-    <div class="lg:flex lg:gap-5">
+    <div class="lg:grid grid-cols-2 lg:gap-5">
         <section class="rounded-lg mb-8">
             <header
                 class="font-medium text-2xl text-orange-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800"
@@ -38,20 +38,22 @@ import TechCard from "./TechCard.astro";
                 <TechCard techName="React" />
                 <TechCard techName="Nextjs" />
                 <TechCard techName="Astro" />
-                <TechCard techName="Bootstrap" />
+                <TechCard techName="Threejs" />
                 <TechCard techName="Tailwind" />
+                <TechCard techName="Bootstrap" />
+                <TechCard techName="GSAP" />
             </div>
         </section>
-        <section class="rounded-lg mb-8">
+        <section class="rounded-lg mb-8 flex flex-col">
             <header
                 class="font-medium text-2xl text-orange-300 px-3 py-1 rounded-t-lg rounded-tr-lg inline-block bg-neutral-800
-                lg:float-right"
+                lg:float-right self-end"
             >
                 Backend
             </header>
             <div
                 class="flex flex-wrap p-3 gap-3 justify-center bg-neutral-800 rounded-tr-lg rounded-b-lg rounded-bl-lg
-                lg:clear-right lg:rounded-t-lg lg:rounded-tr-none"
+                lg:clear-right lg:rounded-t-lg lg:rounded-tr-none content-start grow"
             >
                 <TechCard techName="Node" />
                 <TechCard techName="Prisma" />

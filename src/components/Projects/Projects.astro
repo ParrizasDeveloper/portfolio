@@ -4,6 +4,17 @@ import ProjectArticle from "./ProjectArticle.astro";
 import { TAGS } from "../../data/Tags.astro";
 
 const PROJECTS = [
+    //taller de vehículos
+    {
+        title: "Garage Studio",
+        description:
+            "Presencia digital profesional para talleres mecánicos y negocios automotrices. Creado con Next.js y animado con GSAP.",
+        link: "#",
+        code: "#",
+        tags: [TAGS.Nextjs, TAGS.React, TAGS.TypeScript, TAGS.Tailwind, TAGS.HTML, TAGS.Threejs, TAGS.GSAP],
+        image: "/projects/taller-web.avif",
+        currentlyWorking: true,
+    },
     {
         title: "Nitro Crown",
         description:
@@ -18,9 +29,10 @@ const PROJECTS = [
             TAGS.HTML,
             TAGS.Prisma,
             TAGS.Neon,
+            TAGS.GSAP,
         ],
         image: "/projects/nitro-crown.webp",
-        currentlyWorking: true,
+        currentlyWorking: false,
     },
     {
         title: "Summoner Stats",
@@ -28,7 +40,7 @@ const PROJECTS = [
             "Creado con React y Node mediante Vite - Es una plataforma para analizar jugadores de League of Legends.",
         link: "https://sumstats.up.railway.app/",
         code: "https://github.com/ParrizasDeveloper/summoner-stats",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.React, TAGS.Node],
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.React, TAGS.Node, TAGS.GSAP],
         image: "/projects/sumstats.webp",
         currentlyWorking: false,
     },
